@@ -1,21 +1,29 @@
 import "./Dashboard.css";
 import RecentComp from "./RecentComp";
 import ColItem from "./ColItem";
-import {DiscountShape, ShoppingCart, Calendar, ArrowUp2, LocationTick, Heart, UserAdd} from 'iconsax-react';
+import profilePhoto from '../../Profile.jpg';
+import {DiscountShape, Calendar2, ShoppingCart, Calendar, ArrowUp2, LocationTick, Heart, UserAdd} from 'iconsax-react';
 
 function Dashboard() {
-    
+    // const profilePhoto = "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     return(
         <div className="Dashboard">
             <div className="dash-topsec">
-
+                <div className="dash-head">
+                    <span>Dashboard</span>
+                    <div className="profile" style={{background:`url(${profilePhoto})`}}> </div>
+                </div>
+                <div className="dash-subhead">
+                    <span>1 November - 30 November 2022</span>
+                    <Calendar2 size="16" variant="Broken"/>
+                </div>
             </div>
-            
+
             <div className="colage">
-                <ColItem value='12.0000' percent="11%" rotate='30deg' Icon={LocationTick} color="#45b500" heading='User Visit' varient="Bold" size="19" />
-                <ColItem value='12.0000' percent="11%" rotate='60deg' Icon={UserAdd} color="#f28f3e" heading="New User" Varient="Bulk" size="19" />
-                <ColItem value='12.0000' percent="11%" rotate='300deg' Icon={ArrowUp2} color="#a071ff" heading="Click Rate" varient="Bulk" size="34" />
-                <ColItem value='12.0000' percent="11%" rotate='120deg' Icon={Heart} color="#3d7cf9" heading="Impression" varient="Bulk" size="19" />
+                <ColItem value='12.0000' percent="+11%" rotate='30deg' Icon={LocationTick} color="#45b500" heading='User Visit' varient="Bold" size="19" />
+                <ColItem value='12.0000' percent="+11%" rotate='60deg' Icon={UserAdd} color="#f28f3e" heading="New User" Varient="Bulk" size="19" />
+                <ColItem value='12.0000' percent="+11%" rotate='300deg' Icon={ArrowUp2} color="#a071ff" heading="Click Rate" varient="Bulk" size="34" />
+                <ColItem value='12.0000' percent="+11%" rotate='120deg' Icon={Heart} color="#3d7cf9" heading="Impression" varient="Bulk" size="19" />
             </div>
             <div className="recent-sec">
                 <div className="recent-sec-top">

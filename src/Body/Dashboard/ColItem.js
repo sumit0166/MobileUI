@@ -1,6 +1,6 @@
 import './ColItem.css'
 import {Graph} from 'iconsax-react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 function ColItem({Icon, color, heading, size, varient, rotate, value, percent}) {
     // const StateColor = {
@@ -8,9 +8,7 @@ function ColItem({Icon, color, heading, size, varient, rotate, value, percent}) 
     //     Deactive: '#BF7480',
     //     Draft: '#9CC9D4'
     // }
-    useEffect(() => {
-      console.log(rotate,`rotateX(${rotate})`)
-    }, [])
+
     
     function addAlpha(color, opacity) {
         var _opacity = Math.round(Math.min(Math.max(opacity || 1, 0), 1) * 255);

@@ -9,4 +9,5 @@
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     box-shadow: 0 -2px 50px #b4b4b433;
+    z-index: 999;
 }

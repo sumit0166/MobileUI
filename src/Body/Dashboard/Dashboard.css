@@ -2,6 +2,38 @@
     padding: 0 10px;
     padding-bottom: 20px;
     /* width:-webkit-fill-available; */
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    
+}
+
+
+.dash-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dash-subhead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px;
+    color: rgb(177, 177, 177);
+}
+
+.dash-head > span{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+    object-fit: contain;
+    border-radius: 50px;
+    background-size: 100% 100%;
 }
 
 .recent-sec-top{
