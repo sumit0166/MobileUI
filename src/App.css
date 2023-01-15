@@ -2,9 +2,13 @@
   text-align: center;
   position: absolute;
   bottom: 0;
-  height: fit-content;
+  height: -webkit-fill-available;
   /* background: hsl(193, 95%, 68%); */
   width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 4%;
 }
 
 .App-logo {

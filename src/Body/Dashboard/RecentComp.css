@@ -4,6 +4,21 @@
     /* justify-content: space-between; */
     padding: 4px;
     /* margin-bottom: 25px; */
+    animation-name: animateRecent;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    position: relative;
+}
+@keyframes animateRecent {
+    from{
+        bottom: -100px;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+        
+    }
 }
 
 .icon{

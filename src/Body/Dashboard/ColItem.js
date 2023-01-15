@@ -2,7 +2,7 @@ import './ColItem.css'
 import {Graph} from 'iconsax-react';
 // import { useEffect } from 'react';
 
-function ColItem({Icon, color, heading, size, varient, rotate, value, percent}) {
+function ColItem({Icon, color, heading, size, varient, rotate, value, percent, iconColor,delay}) {
     // const StateColor = {
     //     Active: '#68ae73',
     //     Deactive: '#BF7480',
@@ -17,10 +17,10 @@ function ColItem({Icon, color, heading, size, varient, rotate, value, percent}) 
 
 
     return (
-        <div className="ColItem"  style={{background:addAlpha(color,0.15)}}>
+        <div className="ColItem"  style={{background:addAlpha(color,0.15),animationDelay:delay}}>
             <div className="colItem-top">
                 <div className="colItem-icon">
-                    <Icon size={size} variant={varient} />
+                    <Icon size={size} color={iconColor} variant={varient} />
                 </div>
                 <span>{heading}</span>
             </div>

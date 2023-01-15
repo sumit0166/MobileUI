@@ -14,9 +14,8 @@ function Upload({setIsAdd}) {
     return (
         <div className="Upload" style={{ animationName: uploadOpen ? 'animateup' : 'animatedown' }}>
             <div className="upload-top">
-                <div className="horizontalLine"></div>
-                <InputItem lable="Name" Icon={Keyboard} />
-
+                <div className="horizontalLine" draggable="true" onClick={handleClose}></div>
+                    <InputItem lable="Name" Icon={Keyboard} />
                 <div className="InputItem" Icon={Keyboard}>
                     <div className="lable">Category</div>
                     <div className="input-field">

@@ -1,12 +1,26 @@
 .ColItem{
     /* width: 168px;
     height: 136px; */
+    position: relative;
     border-radius: 10px;
     padding: 8%;
     color: #000f33;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    animation-name: animateCollage;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+}
+@keyframes animateCollage {
+    from{
+        bottom: -100px;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
 }
 .colItem-top{
     display: flex;
